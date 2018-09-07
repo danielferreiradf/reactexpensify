@@ -1,16 +1,29 @@
 import * as firebase from 'firebase';
 
 const config = {
-  apiKey: "AIzaSyAapA5P8gWC83aHK26xgDDMzIBC4dw914w",
-  authDomain: "expensify-a13e6.firebaseapp.com",
-  databaseURL: "https://expensify-a13e6.firebaseio.com",
-  projectId: "expensify-a13e6",
-  storageBucket: "expensify-a13e6.appspot.com",
-  messagingSenderId: "124728096317"
+  apiKey: "AIzaSyDYMOnVsZ5rWpaoL3BLJ1WZApPBbvQf-zY",
+  authDomain: "expensify-f7143.firebaseapp.com",
+  databaseURL: "https://expensify-f7143.firebaseio.com",
+  projectId: "expensify-f7143",
+  storageBucket: "expensify-f7143.appspot.com",
+  messagingSenderId: "804131330408"
 };
 
 firebase.initializeApp(config);
 
-firebase.database().ref().set({
-  name: 'Andrew Mead'
+const database = firebase.database();
+
+database.ref().set({
+  name: 'Daniel Ferreira',
+  age: 25,
+  isSingle: true,
+  location: {
+    city: 'Ubirata',
+    country: 'Brazil'
+  }
 });
+
+database.ref('attributes').set({
+  height: 177,
+  weight: 88
+})
