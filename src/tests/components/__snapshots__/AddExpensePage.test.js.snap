@@ -8,5 +8,11 @@ exports[`should render AddExpensePage correctly 1`] = `
   <ExpenseForm
     onSubmit={[Function]}
   />
+  <Link
+    replace={false}
+    to="/"
+  >
+    Cancel
+  </Link>
 </div>
 `;

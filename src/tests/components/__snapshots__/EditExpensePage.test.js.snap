@@ -19,5 +19,11 @@ exports[`should render EditExpensePage 1`] = `
   >
     Remove
   </button>
+  <Link
+    replace={false}
+    to="/"
+  >
+    Cancel
+  </Link>
 </div>
 `;
