@@ -1,0 +1,27 @@
+.box-layout {
+    align-items: center;
+    background: url('/images/bg.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+    // filter: brightness(30%);
+
+    &__box {
+        background: fade-out(white, .15);
+        border-radius: 3px;
+        padding: $l-size $m-size;
+        text-align: center;
+        width: 25rem;
+    }
+
+    &__title {
+        margin: 0 0 $m-size 0;
+        line-height: 1;
+    }
+    &__subtitle {
+        font-size: $font-large;
+        padding: $m-size 0;
+    }
+}
